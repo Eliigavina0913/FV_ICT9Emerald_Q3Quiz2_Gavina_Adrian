@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Q3Q2</title>
+	<style>
+		
+   body {
+  background-image: url('https://www.hollywoodreporter.com/wp-content/uploads/2024/06/haikyu-the-dumpster-battle-poster3.jpg?w=1296&h=729&crop=1');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+
+}
+
+
+        nav {
+            background-color: black;
+        }
+
+
+        h2 {
+            background-color: black;
+            width: 450px;
+            border-radius: 10px;
+           
+            
+        }
+        
+         label {
+            background-color: black;
+            width: 450px;
+            border-radius: 20px;
+            text-align: center;
+            margin: auto;
+        }
+       
+
+        .navbar-brand img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fcaa1c;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white;
+        }
+
+         .navbar-nav .nav-link {
+            font-family: "Times New Roman";}
+
+        .form-ula{
+           margin: center;
+        }
+        
+        h2{
+        color: orange;
+        }
+
+        .label1{
+            color: orange;
+
+
+        }
+        
+        label1{
+            margin:center;
+        }
+       
+  
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="rounded" src="https://logos-world.net/wp-content/uploads/2021/08/Haikyuu-Symbol.png">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seatingplan.html">SEATING PLAN</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control" type="text" placeholder="search...">
+                    <button class="btn btn-warning" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<br><br><br><br><br><br><br>
+<center>
+<form>
+    <form class="d-flex">
+        <div class="form-ula">
+         <div class="col-md-3 label1">
+    <h2>Fill out the form  below:</h2>
+    <br>
+    <label>Input your name:</label>
+    <br>
+          <input type="namenya" id="namenya" class="form-control" type="text" placeholder="input here...">
+    <br>
+    <label>Input your email address:</label>
+    <br>
+          <input type="text" id="num2" class="form-control" type="text" placeholder="input here...">
+
+    <br>
+    
+
+    <form>
+    <form class="d-flex">
+    <label>Choose your seat:</label><br><br>
+    <select class="form-select" id="show">
+        <option value="none">Choose</option>
+        <option value="400">Standard seats</option>
+        <option value="550">Premier Seats</option>
+        <option value="750">Exclusive Seats</option>
+        <option value="1000">VIP Seats</option>
+    </select>
+    <br><br>
+
+    <label>Choose an option below:</label><br><br>
+    <select class="form-select" id="options">
+        <option value="">Choose</option>
+        <option value="0.8">Student</option>
+        <option value="1">Regular</option>
+        <option value="0.8">Senior Citizen/PWD</option>
+    </select>
+
+    <br>
+    <button type="Submit" class="btn btn-warning" onclick="showValue()">Submit</button>
+</form>
+</form>
+</div>
+</div>
+</form>
+</form>
+</center>
+
+<script>
+    function showValue(){
+        var seat = document.getElementById("show").value;
+        var passenger = document.getElementById("options").value;
+        window.alert("The value of your ticket is "+ seat * passenger);}
+</script>
+
+
+ 
+
+     
+</body>
+</html>
